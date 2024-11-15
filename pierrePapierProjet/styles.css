@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    background-color: #2c121a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50%;
+    max-width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out;
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.choix {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.ChoixUtilisateur, .ChoixOrdinateur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    min-height: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.ChoixUtilisateur:hover, .ChoixOrdinateur:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.Ganger {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f4d03f;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:hover {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transform: translateY(-3px);
+}
+
+.buttons button:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 2px white;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media (max-width: 1000px){
+    
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .titre {
+        font-size: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .choix {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .ChoixUtilisateur, .ChoixOrdinateur {
+        width: 60%;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .buttons {
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .buttons button {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .Ganger {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .titre {
+        font-size: 0.9rem;
+    }
+
+    .ChoixUtilisateur, .ChoixOrdinateur {
+        width: 80%;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .buttons button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .Ganger {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .container {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .titre {
+        font-size: 0.8rem;
+        gap: 10px;
+    }
+
+    .ChoixUtilisateur, .ChoixOrdinateur {
+        width: 90%;
+        min-height: 100px;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .buttons {
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+        max-width: 100px;
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .Ganger {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,53 @@
+{
+	"folders": [
+		{
+			"path": "../zaki.html"
+		},
+		{
+			"path": "../profile"
+		},
+		{
+			"path": "../projettroi"
+		},
+		{
+			"path": "../api projet"
+		},
+		{
+			"path": "../udemy"
+		},
+		{
+			"path": "../projet 4 UDEMI"
+		},
+		{
+			"path": "../PROJET 5 udemi"
+		},
+		{
+			"path": "../projet6uDEMI"
+		},
+		{
+			"path": "../projet 7"
+		},
+		{
+			"path": "../snakeGame"
+		},
+		{
+			"path": "../DERNIER PROJET"
+		},
+		{
+			"path": "../projetscript1"
+		},
+		{
+			"path": "../tache"
+		},
+		{
+			"path": "../projet dictionaire"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pierrePapierProjet",
+		"C_Cpp.inactiveRegionBackgroundColor": "bac"
+	}
+}
